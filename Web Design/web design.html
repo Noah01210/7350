@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Wong Kar-wai </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64" style="font-size: 38px;">
+      <b>
+          <span style="display: block; color: #ecb2d8;">Wong</span>
+          <span style="display: block; color: #ecb2d8">Kar-wai</span>
+          <span style="font-size: 24px;">The best director</span>
+      </b>
+  </h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">movie</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Video</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The best</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Other</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span>The best director</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo">
+      <b>Why 
+          <span style="color: #ecb2d8;">Wong Kar-wai</span>
+      </b>
+  </h1>
+  </div>
+  <!-- Services -->
+    <div class="w3-container" id="showcase" style="margin: top 30px">
+      <h1 class="w3-xxxlarge" style="color: rgb(96, 96, 96);"><b>Introduction.</b></h1>
+      <hr style="width:50px;border:5px solid rgb(96, 96, 96)" class="w3-round">
+      <p>Wong Kar-wai, born on July 17, 1958 in Shanghai, China, is a famous Chinese film and television director, screenwriter, and producer.</p>
+      <p>Wong Kar-Wai is good at the unique aesthetics of light and shadow. He has won the Hong Kong Film Awards and the European Film Awards many times, and has won many major international film awards, including the Cesar Award, the New York Film Critics Circle Award, and the National Society of Film Critics Award. He has competed for the Palme d'Or, the Cannes Film Festival's highest honor, four times and is the first Chinese director to win the Cannes Film Festival's Best Director Award.
+      </p>
+    </div>
+
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+        <img src="https://th.bing.com/th/id/R.16870d51324ff3bce25b9bf5b2869883?rik=QqQd2AC2MhZqKQ&riu=http%3a%2f%2fn.sinaimg.cn%2fent%2ftransform%2fw600h504%2f20180212%2fJk28-fyrpeie0253480.jpg&ehk=O9HrD8dJNVnk166zgJ3BKFNLh29Jml9g2aqX5TxmIf4%3d&risl=&pid=ImgRaw&r=0" style="width: 60%" onclick="onClick(this)" alt="Concrete meets bricks">
+    </div>
+    <div class="w3-half">
+        <img src="https://th.bing.com/th/id/R.d8a3afaef2e6b3199d1c78269b9883b6?rik=C4T5Csf%2bVfz%2bsA&riu=http%3a%2f%2fimage12.m1905.cn%2fmapps%2fuploadfile%2fedu%2f2014%2f0526%2f2014052602394213655.jpg&ehk=ffl6GAiztgfFJyiCPXcYTMtFLUfysM2Ao7wfWf9%2bXnk%3d&risl=&pid=ImgRaw&r=0" style="width: 80%" onclick="onClick(this)">
+    </div>
+  </div>
+
+  <div class="w3-container" id="services" style="margin-top: 30px;">
+    <h1 class="w3-xxxlarge" style="color: rgb(96, 96, 96);"><b>movie</b></h1>
+    <hr style="width:50px;border:5px solid rgb(96, 96, 96)" class="w3-round">
+    <div class="w3-row-padding w3-grayscale" style="display: flex;">
+      <div class="w3-col m4 w3-margin-bottom movie-entry" style="flex: 1;">
+        <div class="w3-light-grey">
+            <img src="https://th.bing.com/th/id/OIP.GWqHpDBxLMaG6x4m_kIaeQHaKi?rs=1&pid=ImgDetMain" alt="ChungKing Express" style="width:100%">
+          <div class="w3-container">
+            <h3 onclick="onClick(this)" alt="Wong kar-wai">ChungKing Express</h3>
+            <div id="additionalInfo"></div>
+            <p>Drama/Romance (1994)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"When we were closest, the distance between me and her was only 0.01 centimeters. 57 hours later, I fell in love with this woman."</p>
+          </div>
+        </div>
+      </div>  
+      <div class="w3-col m4 w3-margin-bottom movie-entry" style="flex: 1;">
+        <div class="w3-light-grey">
+            <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.t9oUrmxJ3EAN_UrMgq-yfQHaKe?rs=1&pid=ImgDetMaing" alt="Jane" style="width:100.3%">
+          <div class="w3-container">
+            <h3> Fallen Angels</h3>
+            <p>Drama/Romance (1995)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"Some people are not suitable for getting too close to, and they will not be interested if they know too much." 　　　　　　　　　　</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom movie-entry" style="flex: 1;">
+        <div class="w3-light-grey">
+            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.9e413001da5dc34955061df30437c850?rik=Zl6wQcCmBqfCQg&riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20211115ac%2f354%2fw810h1144%2f20211115%2f6428-8eb50c9466c23586248079b77b5868da.jpg&ehk=0gX4NzDPsWMh04MUqiAh2unUAY4qN6X9OGl6%2flOX9YE%3d&risl=&pid=ImgRaw&r=0" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Happy Together</h3>
+            <p>Romance/homosexual (1997)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"I thought about you.I forgot you are gone.why don't we start from the beginning."<br>　　　　　　　　　　　　　　　　　　　　　　</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom movie-entry" style="flex: 1;">
+        <div class="w3-light-grey">
+            <img src="https://th.bing.com/th/id/R.f67039b2288dc45d0755676fe36d62d5?rik=OqzDkuT1atYY1g&riu=http%3a%2f%2fimg.doooor.com%2fimg%2fforum%2f201706%2f23%2f183322bvq24lpqqixg6mci.jpg&ehk=lqgB%2bGCNvZQE%2bm%2btELJQEfz6%2b%2fqWmKajnS4PTyB3Td0%3d&risl=&pid=ImgRaw&r=0" alt="Mike" style="max-width: 100%; height: auto;">
+            <div class="white-block" style="background-color: #eae8e8; height: 15px;"></div>
+            <div class="w3-container">
+            <br> <!-- Line break added here -->
+            <h3>Days of Being Wild</h3>
+            <p>Drama/Romance (1990)</p>
+            <p class="w3-opacity" style="font-size: 14px;"> "I’ve heard that there was a kind of bird with no legs. This kind of bird could land only once, that was the time it died."<br>　　　　</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom movie-entry" style="flex: 1;">
+        <div class="w3-light-grey">
+            <img src="https://th.bing.com/th/id/R.25060358c2693e43ed0fd7a34473ec03?rik=tDwLcPLwxIls3A&riu=http%3a%2f%2fi.gtimg.cn%2fqqlive%2fimg%2fjpgcache%2ffiles%2fqqvideo%2f5%2f5fwgsxm5kaowit3.jpg&ehk=VtSy8uJf46bguGzHnalPhYTrNPtyje%2bJMKpsqxQUgkQ%3d&risl=&pid=ImgRaw&r=0" alt="Mike" style="width:100%">
+            <div class="w3-container">
+            <h3>In the Mood for Love</h3>
+            <p>Drama/Romance (2000)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"It's me, if I have an extra ferry ticket, will you follow me?"<br>　　　　<br>　　　　</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom movie-entry" style="flex: 1;">
+        <div class="w3-light-grey">
+            <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.rgSQLhoh5x2rpWcvvf4NpwHaK1?rs=1&pid=ImgDetMain" alt="Mike" style="width:96%">
+          <div class="w3-container">
+            <h3>2046</h3>
+            <p>Drama (2004)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"In the end, I finally understood that some things cannot be forced, and all I can do is give up."<br>　　　　　　　　　　　　　　　　　　　　　　</p>
+          </div>
+        </div>
+      </div>     
+      <div class="w3-col m4 w3-margin-bottom movie-entry" >
+        <div class="w3-light-grey">
+            <img src="https://pic.baike.soso.com/p/20140117/20140117112253-1755212230.jpg" alt="Jane" style="width:100.3%">
+          <div class="w3-container">
+            <h3> The Grandmaster</h3>
+            <p>Action/Drama (2013)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"Do you know why knives have to be sheathed? Because the true meaning of the knife is not to kill, but to hide." 　　　　　　　　　　</p>
+          </div>
+        </div>
+      </div> 
+      <div class="w3-col m4 w3-margin-bottom movie-entry" >
+        <div class="w3-light-grey">
+            <img src="https://th.bing.com/th/id/R.4e08dd99e5943b2ed96235485294888d?rik=mirRtFBskoGH7g&riu=http%3a%2f%2fi0.sinaimg.cn%2fent%2fx%2f2009-02-22%2f7c81fa8f7ed230b1ae4a0d3a72fdc370.jpg&ehk=my%2bDE6eREuZILSM8nTzLyUwnJJvi1ScyXQHl1E4qGkk%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Jane" style="width:100.3%">
+          <div class="w3-container">
+            <h3> Ashes of Time</h3>
+            <p>Action/Drama (2013)</p>
+            <p class="w3-opacity" style="font-size: 14px;">"The people who know you best are not your friends, but your enemies."<br>　　　　　　<br>　</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+      
+
+
+  <!-- Pagination buttons -->
+  <div class="w3-center w3-padding-32" >
+    <div class="w3-bar" >
+      <button class="w3-bar-item w3-button pagination-button" onclick="showPage(1)" >1</button>
+      <button class="w3-bar-item w3-button pagination-button" onclick="showPage(2)" >2</button>
+      <button class="w3-bar-item w3-button pagination-button" onclick="showPage(3)" >3</button>
+    </div>
+  </div>
+
+  <script>
+    let currentPage = 1;
+    const itemsPerPage = 3; // Number of movie entries per page
+    
+    function showPage(pageNumber) {
+      // Hide all movie entries
+      const movieEntries = document.getElementsByClassName('movie-entry');
+      for (let entry of movieEntries) {
+        entry.style.display = 'none';
+      }
+    
+      // Calculate the range of movie entries to display for the selected page
+      const startIndex = (pageNumber - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+    
+      // Display the movie entries for the selected page
+      for (let i = startIndex; i < endIndex && i < movieEntries.length; i++) {
+        movieEntries[i].style.display = 'block';
+      }
+    
+      currentPage = pageNumber;
+    }
+    
+    // Show the initial page
+    showPage(currentPage);
+  </script>
+    
+    <div class="w3-container" id="designers" style="margin-top:0;">
+        <h1 class="w3-xxxlarge" style="color: rgb(96, 96, 96);"><b>Video</b></h1>
+        <hr style="width:50px; border:5px solid rgb(96, 96, 96)" class="w3-round">  
+        <iframe width="997" height="561" src="https://www.youtube.com/embed/xB9JvRbBZRM" title="Martin Scorsese and Kar Wai Wong Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+        </video>
+    </div>
+
+    <div class="w3-container" id="packages" style="margin-top:75px">
+        <h1 class="w3-xxxlarge" style="color: rgb(96, 96, 96);"><b>The best</b></h1>
+        <hr style="width:50px;border:5px solid rgb(96, 96, 96)" class="w3-round">
+        <p><b>The best director in China?</b></p>
+        <p>Wong Kar-Wai's films have a strong personal style. He likes to use slow rhythms and appropriate music to bring out the atmosphere of the film. His photography techniques are also very unique. He often collaborated with Du Kefeng and Zhang Shuping, and was called the Iron Triangle by the outside world. Zhang and Du also made Wong Kar-wai's films more aesthetically pleasing . When Doyle shot Wong Kar-Wai's films, his photography techniques were also very unique, and his "handheld" and "half-covered" techniques became their trademarks.
+        </p>
+        <img src="https://th.bing.com/th/id/R.8364d3fc6d724e2015efd3a2cbf89516?rik=KMt3KZnCt2WJzw&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180111%2fdafccc668ccd40b59d46632226798525.jpeg&ehk=4%2fdOq6Iy5hhnT5o0SQVRkCIOCSR0YnRjnaoGPprFoj8%3d&risl=&pid=ImgRaw&r=0" style="width: 60%" onclick="onClick(this)" alt="Concrete meets bricks">
+        <p>Wong Kar-Wai loves to use actors with strong personal style, reputation for acting skills and excellent professionalism in his movies, such as Tony Leung, Leslie Cheung, Maggie Cheung, Jacky Cheung, Carina Lau, Faye Wong, etc. who are all frequent guests in his works;</p>
+        <p>Most of the plays directed by Wong Kar-Wai do not have pre-scripts, and the actors are only given lines on the day of filming. This means that the actors will not know the content of the play before watching the finished film. Wong Kar-wai's directing style has enabled many actors to give excellent performances in his works. Many actors also said that their acting skills have improved after filming Wong Kar-wai's movies.</p>
+        <img src="https://n.sinaimg.cn/sinacn_s20190428/352/w1080h872/20190428/kCoL-hwfpcxm6540071.jpg" style="width: 60%" onclick="onClick(this)" alt="Concrete meets bricks">
+        <p><b>Wong Kar-wai's major achievements include</b></p>
+        <p>Best Director Award at the 50th Cannes International Film Festival<br>
+            Three Hong Kong Film Awards Best Director Award<br>
+            The 28th Taiwan Film Golden Horse Awards Best Director Award<br>
+            The 33rd Hong Kong Film Awards Best Screenplay Award<br>
+            Best Director Award at the 4th Beijing International Film Festival<br>
+            The 8th Asian Film Awards Best Director Award<br>
+            2019 Hong Kong Film Writers Guild "Honorary Award"</p>
+    </div>
+
+    <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge" style="color: rgb(96, 96, 96);"><b>Other</b></h1>
+        <hr style="width:50px;border:5px solid rgb(96, 96, 96)" class="w3-round">
+        <p>This page was created by WangNuoya</p>
+        <p>Information mainly comes from Wikipedia. </p>
+        <p>Thank you</p>
